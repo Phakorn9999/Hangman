@@ -3,8 +3,6 @@
 
 
 ![img.png](images/img.png)
-
-
 A hangman in Thai language. Build with [dart](https://flutter.dev/). Using [Flutter](https://flutter.dev/) framework.
 
 ## Basic rule 
