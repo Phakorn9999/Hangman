@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hangman/get_word.dart';
 import 'package:hangman/pages/playing.dart';
 
-
-
 class Home extends StatefulWidget {
   final hangmanWord Hangman = hangmanWord();
 

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-
 // Use to paint the hangman in every state
 class LinePainter extends CustomPainter {
   final int state;
@@ -184,4 +183,3 @@ class LinePainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter old) => true;
 }
-

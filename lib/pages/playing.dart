@@ -22,6 +22,7 @@ class _PlayingState extends State<Playing> {
   late String currentWord;
   late List<bool> buttonStatus;
   late Size size;
+
   // image use in buttons' background
   List<String> colorButton = [
     "assets/image/woodButton2_crop.jpg",
@@ -47,6 +48,7 @@ class _PlayingState extends State<Playing> {
     super.initState();
     initialize();
   }
+
   // create 1 button --> from "createButtons"
   Widget createButton(int index) {
     double buttonRound = size.width / 30;
@@ -81,6 +83,7 @@ class _PlayingState extends State<Playing> {
       ),
     );
   }
+
   // create buttons in the widget "wrap"
   List<Widget> createButtons() {
     List<Widget> buttons = [];
@@ -102,6 +105,7 @@ class _PlayingState extends State<Playing> {
       _endGamePopup("YOU LOSE", false);
     }
   }
+
   // From winLose true = win, false = lose
   void _endGamePopup(String status, bool result) {
     showModalBottomSheet(
@@ -167,6 +171,7 @@ class _PlayingState extends State<Playing> {
           );
         });
   }
+
   // when the letter button is pressed
   void pressedLetter(int letterIndex) {
     setState(() {
